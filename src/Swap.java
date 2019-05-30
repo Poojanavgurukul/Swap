@@ -8,8 +8,7 @@ public class Swap {
     }
     public static List<Integer>swap(List<Integer> numbers, int i, int j){
         int elementI = numbers.get(i);
-        int elementJ=numbers.get(j);
-        numbers.set(i,elementJ);
+        numbers.set(i,numbers.get(j));
         numbers.set(j,elementI);
         return numbers;
     }
